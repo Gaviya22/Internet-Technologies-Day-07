@@ -48,11 +48,35 @@
 
 // console.log(sample("Hi saman"));
 
-const productsList = [
-    { name: "bun", inStock: true },
-    { name: "car", inStock: false },
-    { name: "bat", inStock: true },
-    { name: "van", inStock: false },
+// const productsList = [
+//     { name: "bun", inStock: true },
+//     { name: "car", inStock: false },
+//     { name: "bat", inStock: true },
+//     { name: "van", inStock: false },
+// ];
+
+// productsList.forEach(product => console.log(product));
+
+// const letterList = ["B", "A", "D", "C"];
+
+// let sortAr = letterList.toSorted();
+
+// console.log(sortAr);
+
+// const employeeSalary = [75000, 25000, 45000, 55000];
+
+// let newSalaryArray = employeeSalary.map(salary=>salary*2);
+
+// console.log(newSalaryArray);
+
+const studentList = [
+    {id:"001",name:"saman"},
+    {id:"002",name:"kamal"},
+    {id:"003",name:"wimal"},
+    {id:"004",name:"ranil"}
 ];
 
-productsList.forEach(product => console.log(product));
+
+let student = studentList.find(student=>student.id==="003");
+
+console.log(student);
