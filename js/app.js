@@ -14,36 +14,45 @@
 //     }
 // )
 
-let inStockItems = product.filter(product => product.inStock == false);
+// let inStockItems = product.filter(product => product.inStock == false);
 
-function getSum(num1, num2){
-    return num1+num2;
-}
+// function getSum(num1, num2){
+//     return num1+num2;
+// }
 
-getSum(10,20);
+// getSum(10,20);
 
-let getSum = function (num1,num2){
-    return num1+num2;
-}
+// let getSum = function (num1,num2){
+//     return num1+num2;
+// }
 
-console.log(getSum(10,20));
+// console.log(getSum(10,20));
 
-let getSum = (num1, num2) => {
-    return num1+num2;
-}
+// let getSum = (num1, num2) => {
+//     return num1+num2;
+// }
 
-console.log(getSum(10,20));
+// console.log(getSum(10,20));
 
-let sample = txtValue => {
-    return txtValue;
-}
+// let sample = txtValue => {
+//     return txtValue;
+// }
 
-console.log(sample("Hi saman"));
+// console.log(sample("Hi saman"));
 
-let getSum = (num1, num2) => num1+num2;
+// let getSum = (num1, num2) => num1+num2;
 
-console.log(getSum(10,20));
+// console.log(getSum(10,20));
 
-let sample = txtValue => txtValue;
+// let sample = txtValue => txtValue;
 
-console.log(sample("Hi saman"));
+// console.log(sample("Hi saman"));
+
+const productsList = [
+    { name: "bun", inStock: true },
+    { name: "car", inStock: false },
+    { name: "bat", inStock: true },
+    { name: "van", inStock: false },
+];
+
+productsList.forEach(product => console.log(product));
