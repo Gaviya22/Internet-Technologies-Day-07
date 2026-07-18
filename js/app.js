@@ -81,6 +81,52 @@
 
 // console.log(student);
 
-fetch("/customers.json").then(res=>res.json()).then(data=>{
-    console.log(data);
+fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>{
+
+    let output = "";
+
+    data.forEach(product => {
+
+        output += `
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 shadow">
+
+                        <img src="${product.image}"
+                             class="card-img-top p-3"
+                             style="height:250px; object-fit:contain;"
+                             alt="${product.title}">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h5 class="card-title">${product.title}</h5>
+
+                            <p class="card-text">
+                                <strong>Category:</strong> ${product.category}
+                            </p>
+
+                            <p class="card-text">
+                                <strong>Price:</strong> $${product.price}
+                            </p>
+
+                            <p class="card-text text-warning">
+                                ⭐ ${product.rating.rate}
+                                (${product.rating.count} Reviews)
+                            </p>
+
+                            <button class="btn btn-primary mt-auto">
+                                Buy Now
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            `;
+        
+    });
+
+    document.getElementById("products").innerHTML = output;
 })
+.catch(error => {
+    console.log(error);
+});
