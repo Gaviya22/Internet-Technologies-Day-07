@@ -81,7 +81,7 @@
 
 // console.log(student);
 
-fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>{
+fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(dat=>{
 
     let output = "";
 
