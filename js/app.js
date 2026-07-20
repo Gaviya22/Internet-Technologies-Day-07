@@ -110,7 +110,7 @@ fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>{
 
                             <p class="card-text text-warning">
                                 ⭐ ${product.rating.rate}
-                                (${product.rating.count} Review)
+                                (${product.rating.count} Reviews)
                             </p>
 
                             <button class="btn btn-primary mt-auto">
