@@ -85,7 +85,7 @@ fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>{
 
     let output = "";
 
-    data.forEach(pro => {
+    data.forEach(pr => {
 
         output += `
                 <div class="col-md-4 col-lg-3 mb-4">
