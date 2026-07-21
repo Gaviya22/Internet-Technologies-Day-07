@@ -83,7 +83,7 @@
 
 fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>{
 
-    let output = "";
+    let outpu = "";
 
     data.forEach(product => {
 
