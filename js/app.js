@@ -98,7 +98,7 @@ fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>{
 
                         <div class="card-body d-flex flex-column">
 
-                            <h5 class="card-title">${product.title}</h5>
+                            <h5 class="card-title">${product.titl}</h5>
 
                             <p class="card-text">
                                 <strong>Category:</strong> ${product.category}
