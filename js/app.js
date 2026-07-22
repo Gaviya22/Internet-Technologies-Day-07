@@ -91,7 +91,7 @@ fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>{
                 <div class="col-md-4 col-lg-3 mb-4">
                     <div class="card h-100 shadow">
 
-                        <img src="${product.ima}"
+                        <img src="${product.imag}"
                              class="card-img-top p-3"
                              style="height:250px; object-fit:contain;"
                              alt="${product.title}">
